@@ -1,0 +1,32 @@
+﻿#!/usr/bin/env python
+# coding: utf-8
+
+'''
+Created on 29.01.2017
+
+@author: Christopher Köck
+'''
+
+PASSWORD = "asdf1234"
+
+GPIO_OUT = 17
+GPIO_IN = 18
+GPIO_BUTTON_1 = 21
+GPIO_BUTTON_2 = 22
+
+#
+#    0 besteht aus ZERO_PULSE_DURATION ZERO_GAP_DURATION
+#    1 besteht aus ONE_PULSE_DURATION ONE_GAP_DURATION
+#
+
+ZERO_PULSE_DURATION = 410
+ZERO_GAP_DURATION = 436
+
+ONE_PULSE_DURATION = 410
+ONE_GAP_DURATION = 1217
+
+LEADING_PULSE_DURATION = 3298
+LEADING_GAP_DURATION = 1608
+
+FREQUENCY = 38000
+DUTY_CYCLE = 0.33  # Verhältnis von Hi zu Lo

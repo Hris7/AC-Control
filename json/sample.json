@@ -1,0 +1,12 @@
+{
+  "version": "v1",
+  "auth": "asdf1234",
+  "power": "on",
+  "mode": "fan",
+  "temp": 20,
+  "fanSpeed": "auto",
+  "swing": "off",
+  "setAirflow": false,
+  "powerful": false,
+  "economy": false
+}
