@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python
+﻿  #!/usr/bin/env python
 # coding: utf-8
 
 '''
@@ -116,6 +116,12 @@ class SimpleSendIR():
         if not self.pi.connected:
             exit(0)
 
+        # set modes
+        self.pi.set_mode(AC_Settings.GPIO_OUT, pigpio.OUTPUT)
+        self.pi.set_mode(AC_Settings.GPIO_IN, pigpio.INPUT)
+        self.pi.set_mode(AC_Settings.GPIO_BUTTON_1, pigpio.INPUT)
+        self.pi.set_mode(AC_Settings.GPIO_BUTTON_2, pigpio.INPUT)
+        
         # build commandOn
         self.commandOn = [0x14, 0x63, 0x00, 0x10, 0x10, 0xFE, 0x09, 0x30, 0x41, 0x01, 0x00, 0x00, 0x00, 0x00, 0x20]
 
